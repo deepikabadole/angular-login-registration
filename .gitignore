@@ -1,0 +1,61 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/perfect-date/dist
+/perfect-date/tmp
+/perfect-date/out-tsc
+# Only exists if Bazel was run
+/perfect-date/bazel-out
+
+# dependencies
+/perfect-date/node_modules
+
+# profiling files
+/perfect-date/chrome-profiler-events*.json
+/perfect-date/speed-measure-plugin*.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+
+/perfect-date-api/node_modules
+/perfect-date-api/public/hot
+/perfect-date-api/public/storage
+/perfect-date-api/storage/*.key
+/perfect-date-api/vendor
+/perfect-date-api/.env
+/perfect-date-api/.env.backup
+/perfect-date-api/.phpunit.result.cache
+/perfect-date-api/Homestead.json
+/perfect-date-api/Homestead.yaml
+/perfect-date-api/npm-debug.log
+/perfect-date-api/yarn-error.log
+

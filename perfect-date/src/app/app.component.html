@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark ">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item" [hidden]="!navShow">
+      <a routerLink="employees" class="nav-link" routerLinkActive="active">Employee List</a>
+    </li>
+    <li class="nav-item" [hidden]="!navShow">
+      <a routerLink="add" class="nav-link" routerLinkActive="active">Add Employee</a>
+    </li>
+
+    <li class="nav-item" [hidden]="!navShow">
+      <img height="30" width="30" src="{{authUser.profileImage}}"/>
+    </li>
+    <li class="nav-item" [hidden]="!navShow">
+      <a class="nav-link" routerLinkActive="active">{{authUser.firstName}} {{authUser.lastName}}</a>
+
+    </li>
+    <li class="nav-item" [hidden]="!navShow">
+      <a (click)="logout()" class="nav-link" routerLinkActive="active">Logout</a>
+    </li>
+    <li class="nav-item" [hidden]="navShow">
+      <a routerLink="login" class="nav-link" routerLinkActive="active">Login</a>
+    </li>
+    <li class="nav-item" [hidden]="navShow">
+      <a routerLink="registration" class="nav-link" routerLinkActive="active">Registration</a>
+    </li>
+  </ul>
+</nav>
+<div class="container">
+  <br>
+  <h2 style="text-align: center;">{{title}}</h2>
+  <hr>
+  <div class="card">
+    <div class="card-body">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<!--<footer class="footer">-->
+  <!--<div class="container">-->
+    <!--&lt;!&ndash;<span>All Rights Reserved 2019 @JavaGuides</span>&ndash;&gt;-->
+  <!--</div>-->
+<!--</footer>-->
